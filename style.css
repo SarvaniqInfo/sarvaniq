@@ -1,0 +1,214 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, rgba(46, 204, 113, 0.9), rgba(52, 152, 219, 0.7)),
+        url('https://images.unsplash.com/photo-1502082553048-f009c37129b9 ') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0 80px;
+    text-align: center;
+}
+
+.judul {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.deskripsi {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: #2ecc71;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #eafdf3;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #27ae60;
+}
+
+.about p {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1rem;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    background-color: #ecf0f1;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+    background: #f1f1f1;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contact-form {
+    flex: 2;
+    min-width: 300px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background: #27ae60;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .judul {
+        font-size: 2rem;
+    }
+    
+    .deskripsi {
+        font-size: 0.9rem;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .judul {
+        font-size: 1.6rem;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
